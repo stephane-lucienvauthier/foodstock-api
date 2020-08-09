@@ -6,4 +6,3 @@ Dockerfile
 LICENSE
 README.md
 requirements.dev.txt
-entrypoint.sh
