@@ -1,0 +1,9 @@
+.vscode
+tools
+.dockerignore
+.gitignore
+Dockerfile
+entrypoint.sh
+LICENSE
+README.md
+requirements.dev.txt
