@@ -12,7 +12,7 @@ ADD . .
 
 COPY --chown=0:0 entrypoint.sh /
 
-RUN     chmox +x /entrypoint.sh \
+RUN     chmod +x /entrypoint.sh \
     &&  rm entrypoint.sh
 
 EXPOSE 8000
