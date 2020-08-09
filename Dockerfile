@@ -8,9 +8,13 @@ RUN apt-get update \
 WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
-ADD . .
+COPY api ./api
+COPY authentication ./authentication
+COPY categories ./categories
+COPY products ./products
+COPY providers ./providers
 
-RUN mv entrypoint.sh /
+COPY entrypoint.sh /
 
 EXPOSE 8000
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
