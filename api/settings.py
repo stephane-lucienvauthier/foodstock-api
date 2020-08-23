@@ -136,7 +136,7 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = [
     "http://foodstock.pytech.local",
-    "http://foodstock.pytech.fr"
+    "https://foodstock.pytech.fr"
 ]
 
 CORS_ALLOW_METHODS = [
